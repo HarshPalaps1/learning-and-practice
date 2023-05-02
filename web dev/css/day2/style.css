@@ -1,0 +1,42 @@
+/*universal selector */
+*{
+  background: rgb(255, 255, 255);
+}
+
+
+
+/*element selector*/
+h2{
+    color: rgb(0, 0, 0);
+    background-color: greenyellow;
+}
+li{
+    color: white;
+}
+
+
+
+/*class selector {class selector is more dominating over element selector}*/ 
+.pra{
+ color:greenyellow;
+ background-color: black;
+}
+
+
+
+/* id selector {which should be unique inn it self}*/
+#select{
+    background-color: rgb(0, 0, 0);
+}
+
+
+/* desendent selector */
+main p {
+    color: hotpink;
+
+}
+
+/* child selector*/
+li>h3{
+    color: blueviolet;
+}
