@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .grad1a {
+            height: 200px;
+            background-image: linear-gradient(  rgb(2, 205, 245),rgb(180, 227, 180));
+        }
+        .grad1b {
+            height: 200px;
+            background-image: linear-gradient( to right, rgb(2, 245, 2),rgb(180, 227, 180));
+        }
+        .grad2a {
+            height:200px;
+            background-image: radial-gradient(rgb(120, 120, 255),white);
+        }
+        .grad2b {
+            height:200px;
+            background-image: radial-gradient(circle,rgb(120, 120, 255),white);
+        }
+        .grad2c {
+            height:200px;
+            background-image: repeating-linear-gradient( rgb(186, 146, 153) 10%, rgb(234, 0, 117) 20%,)
+        }
+        .grad3 {
+            height: 200px;
+            background-image: conic-gradient(rgb(176, 154, 176),rgb(155, 96, 198),rgb(67, 67, 217),rgb(129, 224, 129),yellow,orange,rgb(213, 91, 91));
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--Gradiant-->
+    <div class="grad1a">linear gradiant A</div>
+    <div class="grad1b">linear gradiant B</div>
+    <div class="grad2a">radial gradiant A</div>
+    <div class="grad2b">radial gradiant B</div>
+    <div class="grad2c">radial gradiant C</div>
+    <div class="grad3">conic gradiant </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PART 1</title>
+</head>
+<body>
+
+<!--(use dom as id)-->
+<p id="one">
+    hello human
+</p>
+
+<p id="two">
+    <span>hi before meeeting</span>
+    hello human
+</p>
+
+
+
+<!--(class)-->
+<ul>
+    <li class="tech">One</li>
+    <li class="tech">Two</li>
+    <li class="tech">Three</li>
+</ul> 
+
+
+<!--(use fom as tag name)-->
+<h1>A apple</h1>
+<h1>B ball</h1>
+<h1>c cat</h1>
+
+
+<!--(use fom as Query selector)-->
+<h5>HELLO WORLD</h5>
+<h5 class="classs">HELLO ANIMALS</h5>
+<h5 id="classes">HELLO HUMAN</h5>
+
+
+
+
+<script>
+////////////(use dom as id)////////////////////////////////////
+let output=document.getElementById("one")// got whole html line with this line
+console.log(output)
+
+let output1=document.getElementById("two").innerText// got text of  html line with this line
+console.log(output1)
+
+
+let output2=document.getElementById("two").innerHTML// got html of  html line with this line
+console.log(output2)
+//////////////////////////////////////////////////////
+
+/////////////(use dom as class)/////////////////////////////////
+let output3=document.getElementsByClassName("tech")
+console.log(output3)
+console.log(output3[1]) // to get single html line
+console.log(output3[1].innerText) // to get html text 
+output3[0].innerText=1
+///////////////////////////////////////////////////////
+
+///////////////(use dom as tag)///////////////////////
+let output4=document.getElementsByTagName("h1")
+console.log(output4[2].innerText)
+output4[1].style.color="hotpink"
+///////////////////////////////////////////////////////
+
+//////////////////(use dom as query selector)//////////
+let output5=document.querySelector(".classs").innerText
+console.log(output5)
+/////////////////////////////////////////////////////////
+
+
+// to give class to element by js
+let output6 = document.getElementsByTagName("h5")
+output6.classList="class"
+let output7=document.getElementsByClassName("class")
+console.log(output7.innerText)
+
+</script>
+
+    
+</body>
+</html>

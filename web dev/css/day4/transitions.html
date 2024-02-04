@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <Style>
+        
+        .A {
+            display: inline-block;
+            color: white;
+            height: 150px;
+            width: 150px;
+            background-color: blueviolet;
+            transition: width 1s, height 1s;
+        }
+        .A:hover {
+            height: 200px;
+            width: 200px;
+        }
+        .B {
+            display: inline-block;
+            color: white;
+            height: 150px;
+            width: 150px;
+            background-color: rgb(232, 16, 121);
+            transition: width 0.5s, height 0.5s;
+            transition-timing-function: ease-in-out;
+        }
+        .B:hover {
+            height: 200px;
+            width: 200px;
+        }
+    </Style>
+
+
+</head>
+<body>
+    <!--Transition-->
+    <div class="A">TRANSTION 1</div>
+
+     <!--Transition-->
+     <div class="B">TRANSTION 2</div>
+</body>
+</html>

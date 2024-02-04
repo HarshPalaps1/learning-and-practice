@@ -1,0 +1,42 @@
+body{
+    background-color: aquamarine;
+}
+
+div{
+    font-size: x-large;
+    text-align: center;
+}
+
+div::after{ /* this is use to put default content in a tag*/
+    content: "this is div content";
+}
+
+
+@media (min-width:200px) { /* change will happen on width */
+    body{
+         background-color: rgb(16, 254, 131)
+        }
+    div::after{
+        content: "here we goooo with div on small screen"
+    }
+}    
+
+
+@media (min-width:550px) { /* change will happen on width */
+    body{
+         background-color: rgb(18, 223, 209)
+        }
+    div::after{
+        content: "here we goooo with div on medium screen"
+    }
+}
+
+@media (min-width:900px) { /* change will happen on width */
+    body{
+         background-color: rgb(18, 172, 223)
+        }
+    div::after{
+        content: "here we goooo with div on large screen"
+    }
+}  
+

@@ -1,0 +1,51 @@
+.A {
+    
+    height: 100px;
+    width: 100px;
+    background-color: palevioletred;
+    animation-name: colorchange;
+    animation-duration:6s;
+    animation-delay:1s;
+}
+
+@keyframes colorchange {
+    from {background-color: palevioletred;}
+    to {background-color: rgb(255, 19, 19);}
+}
+
+.B {
+    
+    height: 100px;
+    width: 100px;
+    background-color: rgb(112, 195, 216);
+    animation-name: snake;
+    position: relative;
+    animation-duration:3s;
+    animation-delay:1s;
+}
+
+@keyframes snake {
+    0% {
+        background-color: rgb(112, 195, 216);
+        top: 0px;
+        left: 0px;
+        }
+    25% {background-color: rgb(19, 255, 55);
+        top:0px;
+        left:200px;    
+    }
+    50% {background-color: rgb(231, 247, 60);
+        top:200px;
+        left:200px;    
+    }
+    75% {background-color: rgb(60, 200, 247);
+        top:200px;
+        left:0px;    
+    }
+    100% {
+        background-color: rgb(112, 195, 216);
+        top: 0px;
+        left: 0px;
+        }
+
+}
