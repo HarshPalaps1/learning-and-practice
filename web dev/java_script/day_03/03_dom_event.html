@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" , initial-scale=1.0">
+    <title>Dom part 3</title>
+</head>
+<body>
+    <h1> hello</h1>
+    <p id ='js'></p>
+    <!-- second way to add event listener-->
+    <button onclick="see()" ondblclick='re()' id="jss">double click to remove me </button>
+
+    <script>
+ //////////////////// first method to add event listener       
+        document.addEventListener("dblclick",hello) // on event 'click'  run function "hello"
+        function hello(){
+            document.getElementById("js").innerText="Sorry hello humans"
+            document.getElementById("jss").innerText='sorry click to remove me'
+
+        }
+/////////////////////second way fuction
+        function re(){
+            document.getElementById("jss").innerText='sorry click to remove me'
+        }        
+        function see(){
+            document.getElementById("jss").innerText=''
+        }   
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom part 2</title>
+</head>
+<body>
+    <ul>
+        <li>this is html line</li>
+        <li>this is html line not removed</li>
+    </ul>
+    
+
+<script>
+    // creating html line by js
+    let title = document.createElement("h1")// making html line
+    title.className='document'// giving that class a name
+    title.style.frontSize="25px" // giving that line style
+    title.textContent="This is java script line"// giving that line a content
+    document.body.appendChild(title)// appending in body of html
+
+    // removing html line by js
+    let line=document.querySelector('ul')
+    let ele=document.querySelectorAll("li")
+    console.log(ele)
+    line.removeChild(ele[0])
+
+
+
+
+</script>
+
+</body>
+</html>
