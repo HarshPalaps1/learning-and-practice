@@ -1,6 +1,6 @@
 /*universal selector */
 *{
-  background: rgb(255, 255, 255);
+  background: rgb(251, 249, 249);
 }
 
 
@@ -38,5 +38,5 @@ main p {
 
 /* child selector*/
 li>h3{
-    color: blueviolet;
+    color: rgb(162, 151, 172);
 }
