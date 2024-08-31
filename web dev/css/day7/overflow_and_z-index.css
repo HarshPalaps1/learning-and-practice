@@ -1,0 +1,24 @@
+p {
+    height: 250px;
+    width:250px;
+    border:2px solid violet;
+    overflow: hidden;/* this is the code we should observe */
+    
+}
+
+.one{
+    height:50px;
+    width:50px;
+    background-color: brown;
+    position: absolute;
+    top: 0;
+    z-index: -1; /* this is the code we should observe */
+}
+.two{
+    height:50px;
+    width:50px;
+    background-color: rgb(23, 128, 122);
+    position: absolute;
+    top: 50px;
+    z-index: 0; /* this is the code we should observe */
+}
