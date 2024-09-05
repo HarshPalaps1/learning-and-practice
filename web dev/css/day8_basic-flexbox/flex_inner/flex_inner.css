@@ -1,0 +1,30 @@
+.box {
+    height:100px;
+    width: 100px;
+}
+.box1{
+    background-color: aqua;
+    flex-grow: 100;
+}
+.box2{
+    background-color: green;
+    order:100; 
+    flex-grow: 50;
+}
+.box3{
+    background-color: blueviolet;
+    order:1; 
+    flex-grow: 20;
+}
+.const1{
+  display: flex;
+  border: 1px solid black;
+  row-gap: 100px;
+ 
+}
+.const2{
+    display: inline-flex;
+    border: 1px solid black;
+    row-gap: 100px;
+   
+  }
